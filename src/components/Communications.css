@@ -1,0 +1,149 @@
+.communications-page {
+  padding: 20px;
+}
+
+.communications-page h2 {
+  margin-bottom: 20px;
+}
+
+.communications-page section {
+  margin-bottom: 30px;
+}
+
+.communications-page h3 {
+  margin-bottom: 15px;
+}
+
+.communications-page ul {
+  list-style: none;
+  padding: 0;
+}
+
+.communications-page li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.communications-page li:last-child {
+  border-bottom: none;
+}
+
+.communications-page li:hover,
+.communications-page li.selected {
+  background-color: #f0f0f0;
+}
+
+.communications-page a {
+  color: #007bff;
+  text-decoration: none;
+  padding: 8px 15px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+}
+
+.communications-page a:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Style for the messaging container */
+.communications-page .messaging-container {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Style for the message list */
+.communications-page .message-list {
+  width: 300px;
+  border-right: 1px solid #ccc;
+  padding: 15px;
+}
+
+/* Style for the message content */
+.communications-page .message-content {
+  flex: 1;
+  padding: 15px;
+}
+
+/* Style for the new message button */
+.communications-page .new-message-button {
+  background-color: #28a745;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.communications-page .new-message-button:hover {
+  background-color: #218838;
+}
+
+/* Style for the new message form */
+.communications-page .new-message-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.communications-page .new-message-form input[type="text"],
+.communications-page .new-message-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.communications-page .new-message-form button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.communications-page .new-message-form button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+/* Style for the message header */
+.communications-page .message-header {
+  margin-bottom: 15px;
+}
+
+.communications-page .message-header h4 {
+  margin-bottom: 5px;
+}
+
+.communications-page .message-header .message-timestamp {
+  font-size: 0.8em;
+  color: #777;
+}
+
+/* Style for the message body */
+.communications-page .message-body {
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+
+/* Style for the message sender and subject */
+.communications-page .message-sender {
+  font-weight: bold;
+}
+
+.communications-page .message-subject {
+  font-style: italic;
+}

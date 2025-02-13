@@ -1,0 +1,90 @@
+.clubs-page {
+  padding: 20px;
+}
+
+.clubs-page h2 {
+  margin-bottom: 20px;
+}
+
+.clubs-page section {
+  margin-bottom: 30px;
+}
+
+.clubs-page h3 {
+  margin-bottom: 15px;
+}
+
+.clubs-page ul {
+  list-style: none;
+  padding: 0;
+}
+
+.clubs-page li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.clubs-page li:last-child {
+  border-bottom: none;
+}
+
+.clubs-page table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.clubs-page th,
+.clubs-page td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.clubs-page th {
+  font-weight: bold;
+}
+
+.clubs-page tr:last-child td {
+  border-bottom: none;
+}
+
+.clubs-page a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.clubs-page a:hover {
+  text-decoration: underline;
+}
+
+/* Add style for the create club button */
+.clubs-page .create-club-button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.clubs-page .create-club-button:hover {
+  background-color: #218838;
+}
+
+/* Add style for the filters container */
+.clubs-page .filters-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.clubs-page .filters-container input[type="text"],
+.clubs-page .filters-container select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}

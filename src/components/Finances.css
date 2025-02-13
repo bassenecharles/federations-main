@@ -1,0 +1,116 @@
+.finances-page {
+  padding: 20px;
+}
+
+.finances-page h2 {
+  margin-bottom: 20px;
+}
+
+.finances-page section {
+  margin-bottom: 30px;
+}
+
+.finances-page h3 {
+  margin-bottom: 15px;
+}
+
+.finances-page ul {
+  list-style: none;
+  padding: 0;
+}
+
+.finances-page li {
+  margin-bottom: 10px;
+}
+
+.finances-page a {
+  color: #007bff;
+  text-decoration: none;
+  padding: 8px 15px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+}
+
+.finances-page a:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Style for the filters container */
+.finances-page .filters-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.finances-page .filters-container label {
+  margin-right: 10px;
+}
+
+.finances-page .filters-container input[type="text"],
+.finances-page .filters-container select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.finances-page table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.finances-page th,
+.finances-page td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.finances-page th {
+  font-weight: bold;
+}
+
+.finances-page tr:last-child td {
+  border-bottom: none;
+}
+
+/* Style for the financial summary */
+.finances-page .financial-summary {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.finances-page .financial-summary h3 {
+  margin-bottom: 10px;
+}
+
+.finances-page .financial-summary .summary-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+/* Style for the financial actions */
+.finances-page .financial-actions {
+  margin-top: 20px;
+}
+
+.finances-page .financial-actions .actions-container {
+  display: flex;
+  gap: 10px;
+}
+
+.finances-page .financial-actions .actions-container button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.finances-page .financial-actions .actions-container button:hover {
+  background-color: #218838;
+}

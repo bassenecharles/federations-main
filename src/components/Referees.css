@@ -1,0 +1,90 @@
+.referees-page {
+  padding: 20px;
+}
+
+.referees-page h2 {
+  margin-bottom: 20px;
+}
+
+.referees-page section {
+  margin-bottom: 30px;
+}
+
+.referees-page h3 {
+  margin-bottom: 15px;
+}
+
+.referees-page ul {
+  list-style: none;
+  padding: 0;
+}
+
+.referees-page li {
+  margin-bottom: 10px;
+}
+
+.referees-page a {
+  color: #007bff;
+  text-decoration: none;
+  padding: 8px 15px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+}
+
+.referees-page a:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Style for the filters container */
+.referees-page .filters-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.referees-page .filters-container label {
+  margin-right: 10px;
+}
+
+.referees-page .filters-container input[type="text"],
+.referees-page .filters-container select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.referees-page table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.referees-page th,
+.referees-page td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.referees-page th {
+  font-weight: bold;
+}
+
+.referees-page tr:last-child td {
+  border-bottom: none;
+}
+
+/* Add style for the create referee button */
+.referees-page .create-referee-button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.referees-page .create-referee-button:hover {
+  background-color: #218838;
+}

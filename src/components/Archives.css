@@ -1,0 +1,46 @@
+.archives-page {
+  padding: 20px;
+}
+
+.archives-page h2 {
+  margin-bottom: 20px;
+}
+
+.archives-page section {
+  margin-bottom: 30px;
+}
+
+.archives-page h3 {
+  margin-bottom: 15px;
+}
+
+.archives-page ul {
+  list-style: none;
+  padding: 0;
+}
+
+.archives-page li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.archives-page li:last-child {
+  border-bottom: none;
+}
+
+.archives-page .archive-actions a {
+  margin-left: 10px;
+  color: #007bff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+}
+
+.archives-page .archive-actions a:hover {
+  background-color: #007bff;
+  color: #fff;
+}

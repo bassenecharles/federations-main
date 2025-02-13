@@ -1,0 +1,125 @@
+.personnel-federal-page {
+  padding: 20px;
+}
+
+.personnel-federal-page h2 {
+  margin-bottom: 20px;
+}
+
+.personnel-federal-page section {
+  margin-bottom: 30px;
+}
+
+.personnel-federal-page h3 {
+  margin-bottom: 15px;
+}
+
+.personnel-federal-page ul {
+  list-style: none;
+  padding: 0;
+}
+
+.personnel-federal-page li {
+  margin-bottom: 10px;
+}
+
+.personnel-federal-page a {
+  color: #007bff;
+  text-decoration: none;
+  padding: 8px 15px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+}
+
+.personnel-federal-page a:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Style for the filters container */
+.personnel-federal-page .filters-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.personnel-federal-page .filters-container label {
+  margin-right: 10px;
+}
+
+.personnel-federal-page .filters-container input[type="text"],
+.personnel-federal-page .filters-container select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.personnel-federal-page table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.personnel-federal-page th,
+.personnel-federal-page td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.personnel-federal-page th {
+  font-weight: bold;
+}
+
+.personnel-federal-page tr:last-child td {
+  border-bottom: none;
+}
+
+/* Style for the add personnel button */
+.personnel-federal-page .add-personnel-button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.personnel-federal-page .add-personnel-button:hover {
+  background-color: #218838;
+}
+
+/* Style for the add personnel form */
+.personnel-federal-page .add-personnel-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.personnel-federal-page .add-personnel-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.personnel-federal-page .add-personnel-form select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.personnel-federal-page .add-personnel-form button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.personnel-federal-page .add-personnel-form button[type="submit"]:hover {
+  background-color: #218838;
+}

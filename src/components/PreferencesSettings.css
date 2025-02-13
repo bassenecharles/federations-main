@@ -1,0 +1,38 @@
+.preferences-settings {
+  padding: 20px;
+}
+
+.preferences-settings h2 {
+  margin-bottom: 20px;
+}
+
+.preferences-settings .form-group {
+  margin-bottom: 15px;
+}
+
+.preferences-settings label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.preferences-settings input[type="color"],
+.preferences-settings select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.preferences-settings button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.preferences-settings button:hover {
+  background-color: #3e8e41;
+}

@@ -1,0 +1,397 @@
+/* General styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  transition: background-color 0.3s, color 0.3s;
+  overflow: hidden;
+}
+
+/* Dark theme */
+body.dark {
+  background-color: #121212;
+  color: #fff;
+}
+
+body.dark .sidebar {
+  background-color: rgba(20, 20, 20, 0.8);
+  backdrop-filter: blur(12px);
+  color: #fff;
+}
+
+body.dark .sidebar nav a {
+  color: #eee;
+}
+
+body.dark .sidebar nav a:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+body.dark .header .search-input {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Light theme */
+body.light {
+  background-color: #f9f9f9; /* Lighter background */
+  color: #444; /* Darker text for better readability */
+}
+
+body.light .sidebar {
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  color: #444; /* Darker text for better readability */
+}
+
+body.light .sidebar nav a {
+  color: #666; /* Slightly darker text for menu items */
+}
+
+body.light .sidebar nav a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+body.light .header .search-input {
+  background-color: #eee;
+  color: #444; /* Darker text for better readability */
+}
+
+/* App container */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar.collapsed .menu-text {
+  display: none;
+}
+
+.menu-text-visible {
+  display: inline;
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 280px;
+  padding: 20px;
+  color: #fff;
+  transition: width 0.3s;
+  position: relative;
+  z-index: 10;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar.collapsed {
+  width: 70px;
+}
+
+.sidebar.collapsed .logo {
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+
+.sidebar.collapsed .menu-heading {
+  display: none;
+}
+
+.sidebar.collapsed nav a span {
+  display: none;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.sidebar .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+.logo-jappale {
+  color: #333; /* Default color */
+  background: linear-gradient(to right, #007749, #feca0a, #bb0000);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.toggle-sidebar-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 0;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+/* Navigation styles */
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav li {
+  margin-bottom: 4px; /* Reduced spacing */
+}
+
+.sidebar nav a {
+  text-decoration: none;
+  display: block;
+  padding: 10px; /* Reduced padding */
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Reduced gap */
+  font-size: 0.9rem;
+}
+
+.sidebar nav a i {
+  width: 22px;
+  text-align: center;
+}
+
+/* Menu section styles */
+.menu-section {
+  padding: 10px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #ddd;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+body.light .menu-section {
+  color: #777; /* Darker color for light mode */
+}
+
+.menu-section:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.menu-section-title {
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+.menu-section i {
+  transition: transform 0.3s;
+}
+
+.menu-section i.open {
+  transform: rotate(180deg);
+}
+
+/* Menu subsection styles */
+.menu-subsection {
+  list-style: none;
+  padding-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* Settings submenu styles */
+.settings-submenu {
+  margin-left: 10px; /* Indent the settings submenu */
+}
+
+.settings-submenu a {
+  display: block;
+  padding: 8px 15px;
+  text-decoration: none;
+  color: #888;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.settings-submenu a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Content styles */
+.content {
+  flex: 1;
+  padding: 25px;
+  overflow: auto;
+  position: relative;
+}
+
+.content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://images.unsplash.com/photo-1579468957549-49cd9af9441f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: blur(6px);
+  z-index: -1;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 1;
+}
+
+.header .search-input {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  width: 320px;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+/* User profile styles */
+.header .user-profile {
+  text-align: right;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative; /* Add position relative */
+}
+
+.profile-menu {
+  position: relative;
+}
+
+.profile-thumbnail {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.profile-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  width: 150px;
+}
+
+.profile-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-dropdown ul li {
+  padding: 10px;
+  text-align: left;
+}
+
+.profile-dropdown ul li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.profile-dropdown ul li a:hover {
+  background-color: #f0f0f0;
+}
+
+.header .admin-name {
+  font-weight: 600;
+  display: block;
+  font-size: 1rem;
+}
+
+.header .federation-name {
+  color: #ccc;
+  display: block;
+  font-size: 0.85rem;
+}
+
+.theme-toggle-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 0;
+  font-size: 1.3rem;
+  transition: color 0.3s;
+}
+
+body.light .theme-toggle-btn {
+  color: #555; /* Darker color for light mode */
+}
+
+/* Toggle sidebar button styles */
+.sidebar-toggle {
+  position: fixed;
+  left: 280px;
+  top: 20px;
+  z-index: 1000;
+  padding: 8px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark theme toggle button */
+body.dark .sidebar-toggle {
+  background-color: #f5f5f5;
+  color: #121212;
+}
+
+body.dark .sidebar-toggle:hover {
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.2);
+}
+
+/* Light theme toggle button */
+body.light .sidebar-toggle {
+  background-color: #333;
+  color: #f5f5f5;
+}
+
+body.light .sidebar-toggle:hover {
+  background-color: #121212;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Adjust position when sidebar is collapsed */
+.sidebar.collapsed + .sidebar-toggle {
+  left: 70px;
+}

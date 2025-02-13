@@ -1,0 +1,90 @@
+.districts-page {
+  padding: 20px;
+}
+
+.districts-page h2 {
+  margin-bottom: 20px;
+}
+
+.districts-page section {
+  margin-bottom: 30px;
+}
+
+.districts-page h3 {
+  margin-bottom: 15px;
+}
+
+.districts-page ul {
+  list-style: none;
+  padding: 0;
+}
+
+.districts-page li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.districts-page li:last-child {
+  border-bottom: none;
+}
+
+.districts-page table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.districts-page th,
+.districts-page td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.districts-page th {
+  font-weight: bold;
+}
+
+.districts-page tr:last-child td {
+  border-bottom: none;
+}
+
+.districts-page a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.districts-page a:hover {
+  text-decoration: underline;
+}
+
+/* Add style for the create district button */
+.districts-page .create-district-button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.districts-page .create-district-button:hover {
+  background-color: #218838;
+}
+
+/* Add style for the filters container */
+.districts-page .filters-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.districts-page .filters-container input[type="text"],
+.districts-page .filters-container select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}

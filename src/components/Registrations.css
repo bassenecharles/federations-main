@@ -1,0 +1,75 @@
+.registrations-page {
+  padding: 20px;
+}
+
+.registrations-page h2 {
+  margin-bottom: 20px;
+}
+
+.registrations-page section {
+  margin-bottom: 30px;
+}
+
+.registrations-page h3 {
+  margin-bottom: 15px;
+}
+
+.registrations-page ul {
+  list-style: none;
+  padding: 0;
+}
+
+.registrations-page li {
+  margin-bottom: 10px;
+}
+
+.registrations-page a {
+  color: #007bff;
+  text-decoration: none;
+  padding: 8px 15px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+}
+
+.registrations-page a:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Add style for the filters container */
+.registrations-page .filters-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.registrations-page .filters-container label {
+  margin-right: 10px;
+}
+
+.registrations-page .filters-container input[type="text"],
+.registrations-page .filters-container select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.registrations-page table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.registrations-page th,
+.registrations-page td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.registrations-page th {
+  font-weight: bold;
+}
+
+.registrations-page tr:last-child td {
+  border-bottom: none;
+}

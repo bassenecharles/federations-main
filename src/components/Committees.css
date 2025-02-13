@@ -1,0 +1,90 @@
+.committees-page {
+  padding: 20px;
+}
+
+.committees-page h2 {
+  margin-bottom: 20px;
+}
+
+.committees-page section {
+  margin-bottom: 30px;
+}
+
+.committees-page h3 {
+  margin-bottom: 15px;
+}
+
+.committees-page ul {
+  list-style: none;
+  padding: 0;
+}
+
+.committees-page li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.committees-page li:last-child {
+  border-bottom: none;
+}
+
+.committees-page table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.committees-page th,
+.committees-page td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.committees-page th {
+  font-weight: bold;
+}
+
+.committees-page tr:last-child td {
+  border-bottom: none;
+}
+
+.committees-page a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.committees-page a:hover {
+  text-decoration: underline;
+}
+
+/* Add style for the create committee button */
+.committees-page .create-committee-button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.committees-page .create-committee-button:hover {
+  background-color: #218838;
+}
+
+/* Add style for the filters container */
+.committees-page .filters-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.committees-page .filters-container input[type="text"],
+.committees-page .filters-container select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
